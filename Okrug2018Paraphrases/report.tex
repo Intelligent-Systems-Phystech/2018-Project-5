@@ -1,0 +1,49 @@
+% \documentclass[twoside,9pt]{extarticle}
+\documentclass[12pt,twoside]{article}
+\usepackage{jmlda}
+
+\usepackage{listings}
+\usepackage{caption}
+%\DeclareCaptionFont{white}{\color{white}}
+%\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+%\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+%%\NOREVIEWERNOTES
+
+% \newenvironment{coderes}%
+%     {\medskip\tabcolsep=0pt\begin{tabular}{>{\small}l@{\quad}|@{\quad}l}}%
+%     {\end{tabular}\medskip}
+
+\begin{document}
+\English
+
+\title{Metric learning for Finding Paraphrases}
+\author{Basimova~N.\,F., Kitashov~F.\,E., Krasnikov~R.\,M., Mokrov~N.\,S.,
+         Okrug~S.\,A., Proskura~P.\,D.,  Shabanov A.\,E.}
+    [Basimova~N.\,F.$^1$, 
+    Kitashov~F.\,E.$^2$, 
+    Krasnikov~R.\,M.$^3$,
+    Mokrov~N.\,S.$^4$,
+    Okrug~S.\,A.$^5$,
+    Proskura~P.\,D.$^6$,
+    Shabanov A.\,E.$^7$ ]
+\email{$^1$ basimova.nf@phystech.edu 
+       $^2$ fedor.kitashov@phystech.edu 
+       $^3$ roman.krasnikov@phystech.edu 
+       $^4$ mokrov@frtk.ru 
+       $^5$ okrug.sa@phystech.edu 
+       $^6$ proskura.pd@phystech.edu 
+       $^7$ shabanov.ae@phystech.edu 
+       }
+\organization{$^{1\,2\,3\,4\,5\,6\,7}$MIPT, $^{4\,5\,6\,7}$IITP RAS}
+
+\abstract{
+\titleEng{Abstract}
+\abstractEng{
+    Finding paraphrases in Russian is a tricky problem due to nearly N! number of ways to construct a valid sentence out of N words. In this paper we introduce the neural pipeline to make finding paraphrases algorithms more robust. We use bi-LSTM network over Fasttext vectors to measure the similarity of two given texts. We can use the returned value to rank the texts in terms of similarity. This method outperforms tf-idf + KNN baseline in both precision and recall.
+    }
+}
+
+\maketitle
+
+
+\end{document}
